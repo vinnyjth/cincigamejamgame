@@ -1,0 +1,219 @@
+Crashlog created at 2015-01-23 22:22:06 -0500
+
+===== MESSAGE:
+
+RuntimeError: Found 2 content files for content/alec; expected 0 or 1
+
+===== COMPILATION STACK:
+
+  (empty)
+
+===== STACK TRACE:
+
+  0. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/data_sources/filesystem.rb:169:in `block in all_split_files_in'
+  1. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/data_sources/filesystem.rb:159:in `each_pair'
+  2. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/data_sources/filesystem.rb:159:in `all_split_files_in'
+  3. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/data_sources/filesystem.rb:84:in `load_objects'
+  4. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/data_sources/filesystem.rb:43:in `items'
+  5. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/base/source_data/site.rb:341:in `block in load_items'
+  6. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/base/source_data/site.rb:340:in `each'
+  7. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/base/source_data/site.rb:340:in `load_items'
+  8. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/base/source_data/site.rb:242:in `block in load'
+  9. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/base/source_data/site.rb:304:in `with_datasources'
+  10. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/base/source_data/site.rb:241:in `load'
+  11. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/base/source_data/site.rb:126:in `layouts'
+  12. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/base/compilation/compiler.rb:186:in `dependency_tracker'
+  13. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/base/memoization.rb:54:in `block in memoize'
+  14. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/base/compilation/compiler.rb:458:in `stores'
+  15. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/base/compilation/compiler.rb:145:in `unload'
+  16. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/base/source_data/site.rb:277:in `unload'
+  17. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/base/source_data/site.rb:257:in `rescue in load'
+  18. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/base/source_data/site.rb:261:in `load'
+  19. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/cli/command_runner.rb:62:in `load_site'
+  20. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/cli/commands/compile.rb:378:in `run'
+  21. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/cli/command_runner.rb:12:in `block in call'
+  22. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/cli/error_handler.rb:72:in `handle_while'
+  23. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/cli/error_handler.rb:24:in `handle_while'
+  24. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/cli/command_runner.rb:11:in `call'
+  25. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.6.1/lib/cri/command_dsl.rb:223:in `block in runner'
+  26. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.6.1/lib/cri/command.rb:298:in `call'
+  27. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.6.1/lib/cri/command.rb:298:in `run_this'
+  28. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.6.1/lib/cri/command.rb:251:in `run'
+  29. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/cli/commands/nanoc.rb:39:in `block in define'
+  30. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.6.1/lib/cri/command.rb:298:in `call'
+  31. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.6.1/lib/cri/command.rb:298:in `run_this'
+  32. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.6.1/lib/cri/command.rb:251:in `run'
+  33. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/cli.rb:58:in `block in run'
+  34. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/cli/error_handler.rb:72:in `handle_while'
+  35. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/cli/error_handler.rb:24:in `handle_while'
+  36. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib/nanoc/cli.rb:56:in `run'
+  37. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/bin/nanoc:25:in `<top (required)>'
+  38. /Users/vincentwilson/.rbenv/versions/2.1.1/bin/nanoc:23:in `load'
+
+===== VERSION INFORMATION:
+
+nanoc 3.7.5 © 2007-2015 Denis Defreyne.
+Running ruby 2.1.1 (2014-02-24) on x86_64-darwin13.0 with RubyGems 2.4.1.
+
+===== SYSTEM INFORMATION:
+
+Darwin Vincents-MacBook-Pro.local 14.0.0 Darwin Kernel Version 14.0.0: Fri Sep 19 00:26:44 PDT 2014; root:xnu-2782.1.97~2/RELEASE_X86_64 x86_64
+
+===== INSTALLED GEMS:
+
+  RedCloth 4.2.9
+  actionmailer 4.1.0
+  actionpack 4.1.0
+  actionview 4.1.0
+  activemodel 4.1.0
+  activerecord 4.1.0
+  activesupport 4.1.0, 4.1.1
+  adsf 1.2.0
+  arel 5.0.0, 5.0.1.20140414130214
+  betabrite 1.0.5
+  bigdecimal 1.2.4
+  blankslate 2.1.2.4
+  builder 3.2.2
+  bundler 1.6.1, 1.6.2
+  celluloid 0.16.0.pre2
+  chunky_png 1.3.1
+  classifier 1.3.4
+  coffee-rails 4.0.1
+  coffee-script 2.2.0, 2.3.0
+  coffee-script-source 1.7.0, 1.8.0
+  colorator 0.1
+  colored 1.2
+  commander 4.1.6
+  compass 0.12.6
+  cri 2.6.1
+  erubis 2.7.0
+  execjs 2.0.2, 2.2.1
+  fast-stemmer 1.0.2
+  ffi 1.9.3
+  foundation 1.0.4
+  foundation-rails 5.2.2.0
+  fssm 0.2.10
+  gemoji 1.5.0
+  geocoder 1.2.4
+  github-pages 18
+  gmaps4rails 2.1.2
+  google-search 1.0.3
+  highline 1.6.21
+  hike 1.2.3
+  hitimes 1.2.1
+  html-pipeline 1.5.0
+  i18n 0.6.9, 0.6.11
+  io-console 0.4.2
+  jbuilder 2.0.6, 2.1.3
+  jekyll 1.5.1, 2.1.0
+  jekyll-coffeescript 1.0.0
+  jekyll-gist 1.1.0
+  jekyll-mentions 0.0.6
+  jekyll-paginate 1.0.0
+  jekyll-redirect-from 0.3.1
+  jekyll-sass-converter 1.0.0
+  jekyll-sitemap 0.2.0
+  jekyll-watch 1.0.0
+  jemoji 0.1.0
+  jquery-rails 3.1.0, 3.1.2
+  json 1.8.1
+  kramdown 1.3.1
+  liquid 2.5.5, 2.6.1
+  listen 1.3.1, 2.7.9
+  mail 2.5.4
+  maruku 0.7.0
+  mercenary 0.3.3
+  mime-types 1.25.1
+  mini_portile 0.5.3
+  minitest 4.7.5, 5.3.2, 5.3.3, 5.4.1
+  multi_json 1.9.2, 1.10.1
+  mysql2 0.3.15
+  nanoc 3.7.5
+  nokogiri 1.6.1
+  parslet 1.5.0
+  pg 0.17.1
+  polyglot 0.3.4, 0.3.5
+  posix-spawn 0.3.8
+  psych 2.0.3
+  pygments.rb 0.5.4, 0.6.0
+  rack 1.5.2
+  rack-test 0.6.2
+  rails 4.1.0
+  rails_12factor 0.0.2
+  rails_serve_static_assets 0.0.2
+  rails_stdout_logging 0.0.3
+  railties 4.1.0
+  rake 10.1.0, 10.2.2, 10.3.2
+  rb-fsevent 0.9.4
+  rb-inotify 0.9.4
+  rb-kqueue 0.2.2
+  rdiscount 2.1.7
+  rdoc 4.1.0, 4.1.1, 4.1.2
+  redcarpet 2.3.0, 3.1.2
+  ruby-usb 0.2.1
+  rubygems-test 0.4.3
+  rubygems-update 2.4.1
+  safe_yaml 1.0.3
+  sass 3.2.19
+  sass-rails 4.0.3
+  sdoc 0.4.0, 0.4.1
+  spring 1.1.2, 1.1.3
+  sprockets 2.11.0, 2.12.0
+  sprockets-rails 2.1.3, 2.1.4
+  test-unit 2.1.1.0
+  thor 0.19.1
+  thread_safe 0.3.3, 0.3.4
+  tilt 1.4.1
+  timers 3.0.1
+  toml 0.1.1
+  treetop 1.4.15
+  turbolinks 2.2.2, 2.3.0
+  tzinfo 1.1.0, 1.2.2
+  uglifier 2.5.0, 2.5.3
+  yajl-ruby 1.1.0
+
+===== ENVIRONMENT:
+
+Apple_PubSub_Socket_Render => "/private/tmp/com.apple.launchd.SFTGCcanMC/Render"
+COCOS_CONSOLE_ROOT => "/Users/vincentwilson/Documents/Programming/cocos2d-x-3.2/tools/cocos2d-console/bin"
+DISPLAY => "/private/tmp/com.apple.launchd.yJ9cn3gEPz/org.macosforge.xquartz:0"
+GEM_PATH => "/Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0:/Users/vincentwilson/.gem/ruby/2.1.0"
+HOME => "/Users/vincentwilson"
+LANG => "en_US.UTF-8"
+LOGNAME => "vincentwilson"
+PATH => "/Users/vincentwilson/.rbenv/versions/2.1.1/bin:/usr/local/Cellar/rbenv/0.4.0/libexec:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/vincentwilson/Documents/Programming/cocos2d-x-3.2/tools/cocos2d-console/bin:/Users/vincentwilson/.rbenv/shims:/Users/vincentwilson/.rbenv/shims:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/local/bin:/opt/local/sbin:usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/vincentwilson/.rbenv/versions/2.1.1/bin/foundation"
+PWD => "/Users/vincentwilson/Documents/Programming/game-jam-site/game-jam-site"
+RBENV_DIR => "/Users/vincentwilson/Documents/Programming/game-jam-site/game-jam-site"
+RBENV_HOOK_PATH => ":/Users/vincentwilson/.rbenv/rbenv.d:/usr/local/etc/rbenv.d:/etc/rbenv.d:/usr/lib/rbenv/hooks"
+RBENV_ROOT => "/Users/vincentwilson/.rbenv"
+RBENV_VERSION => "2.1.1"
+SHELL => "/bin/bash"
+SHLVL => "1"
+SSH_AUTH_SOCK => "/private/tmp/com.apple.launchd.rRTdFeItkI/Listeners"
+TERM => "xterm-256color"
+TERM_PROGRAM => "Apple_Terminal"
+TERM_PROGRAM_VERSION => "343"
+TERM_SESSION_ID => "36A561CF-8EA7-4B87-BDC8-7D56AE3C44B5"
+TMPDIR => "/var/folders/m8/vl1ssfys4nq01b6g489tjr840000gn/T/"
+TWITTER_KEY => "WMzrlwOQZXIJ4MucK6Yz7A"
+TWITTER_SECRET => "hphL2K3VqtYztrv9vyxQ197OQ2XdVw9cIyQ5FReTtw"
+USER => "vincentwilson"
+XPC_FLAGS => "0x0"
+XPC_SERVICE_NAME => "0"
+__CF_USER_TEXT_ENCODING => "0x1F5:0x0:0x0"
+
+===== LOAD PATHS:
+
+  0. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib
+  1. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/colored-1.2/lib
+  2. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.6.1/lib
+  3. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.7.5/lib
+  4. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bundler-1.6.2/lib
+  5. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/site_ruby/2.1.0
+  6. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/site_ruby/2.1.0/x86_64-darwin13.0
+  7. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/site_ruby
+  8. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/vendor_ruby/2.1.0
+  9. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/vendor_ruby/2.1.0/x86_64-darwin13.0
+  10. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/vendor_ruby
+  11. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/2.1.0
+  12. /Users/vincentwilson/.rbenv/versions/2.1.1/lib/ruby/2.1.0/x86_64-darwin13.0
